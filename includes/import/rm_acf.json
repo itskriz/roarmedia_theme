@@ -1,0 +1,97 @@
+[
+    {
+        "key": "group_5b3bbf9a0603f",
+        "title": "Advanced Setings Fields",
+        "fields": [
+            {
+                "key": "field_5b3bc5114d504",
+                "label": "<span style=\"background:rgba(255,255,0,.4);border-radius:3px;box-shadow:0 0 5px -2px #000;color:red;font-size:21px;padding:10px\">!!!!! PLEASE READ BEFORE CONTINUING !!!!<\/span>",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "<p style=\"background:rgba(255,255,0,.4);border-radius:3px;box-shadow:0 0 5px -2px #000;color:red;font-size:18px;line-height:1.2;padding:10px\"><strong>The settings and tools herein are intended for web developers only. If you are not a web developer it is strongly recommended that you avoid modifying anything within this section. It is also strongly recommended to backup your existing website before making any changes within this section.<\/strong><\/p>",
+                "new_lines": "",
+                "esc_html": 0
+            },
+            {
+                "key": "field_5b3bc1ff16cce",
+                "label": "Developer Tools",
+                "name": "rm_developer_tools",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_5b3bbfa916b7a",
+                        "label": "Advanced Layout Editor Debugger",
+                        "name": "enable_avia_debug",
+                        "type": "true_false",
+                        "instructions": "Useful for troubleshooting Advanced Layout Editor elements and for advanced page building techniques.\r\n<br><strong>Note: It is highly recommended that this feature be disabled for websites in production.<\/strong>",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "message": "",
+                        "default_value": 0,
+                        "ui": 1,
+                        "ui_on_text": "Enabled",
+                        "ui_off_text": "Disabled"
+                    },
+                    {
+                        "key": "field_5b3bc24d8c610",
+                        "label": "SCSS Recompiling",
+                        "name": "enable_scss_recompile",
+                        "type": "true_false",
+                        "instructions": "Useful while website is under development or after changes have been made to the website's SCSS files.\r\n<br><strong>Note: It is recommended that this feature be disabled for websites in production.<\/strong>",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "message": "",
+                        "default_value": 0,
+                        "ui": 1,
+                        "ui_on_text": "Enabled",
+                        "ui_off_text": "Disabled"
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "rm-advanced-settings"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "seamless",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    }
+]

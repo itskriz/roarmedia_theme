@@ -1,0 +1,60 @@
+// Vendor Prefixing
+@mixin prefix($property, $value, $prefixes: ()) {
+	@each $prefix in $prefixes {
+		#{'-' + $prefix + '-' + $property}: $value; 
+	}
+	#{$property}: $value;
+}
+// Animation Mixin
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+     @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+     @content;
+  }  
+  @-ms-keyframes #{$animation-name} {
+     @content;
+  }
+  @-o-keyframes #{$animation-name} {
+     @content;
+  }  
+  @keyframes #{$animation-name} {
+     @content;
+  }
+}
+@mixin animation($value) {
+  @include prefix(animation, $value, webkit mos ms o);     
+}
+// Transition prefixing
+@mixin transition($value) {
+	@include prefix(transition, $value, webkit moz ms o);
+}
+// Cross-Browser opacity
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+// Clearfix
+%clearfix {
+  *zoom: 1;
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+// Screen Reader Only Elements
+%sr-only {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+}
