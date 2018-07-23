@@ -46,15 +46,6 @@
 				'force_activation'   => true,
 				'force_deactivation' => false,
 			),
-			// DuracellTomi's Google Tag Manager for Wordpress 1.8.1
-			array(
-				'name'      => 'Google Tag Manager for Wordpress',
-				'slug'      => 'duracelltomi-google-tag-manager',
-				'required'  => true,
-				'version'   => '1.8.1',
-				'force_activation'   => true,
-				'force_deactivation' => true,
-			),
 			// ManageWP Worker
 			array(
 				'name'      => 'ManageWP Worker',
@@ -354,7 +345,7 @@
 		}
 	}
 	add_action( 'acf/init', 'rm_sync_acf_fields' );
-
+	
 	// Enable Layout Builder Debug
 	function builder_set_debug() {
 		return "debug";
