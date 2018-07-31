@@ -444,7 +444,7 @@
 	// Register and Enqueue Custom CSS
 	function rm_custom_scripts() {
 		wp_register_style( 'rm-styles', get_stylesheet_directory_uri() . '/includes/css/styles.css', false, '', 'all' );
-		wp_register_script( 'js-cookie', get_stylesheet_directory_uri() . '/includes/js/js.cookie.js', array(), null, true );
+		wp_register_script( 'js-cookie', get_stylesheet_directory_uri() . '/includes/js/js.cookie.js', array(), null, false );
 		wp_register_script( 'rm-scripts', get_stylesheet_directory_uri() . '/includes/js/scripts.js', array('jquery'), null, true );
 		wp_enqueue_style( 'rm-styles' );
 		wp_enqueue_script( 'rm-scripts' );
