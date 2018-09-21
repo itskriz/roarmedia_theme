@@ -32,10 +32,30 @@
 				'slug'               => 'advanced-custom-fields-pro',
 				'source'             => get_stylesheet_directory() . '/includes/plugins/advanced-custom-fields-pro-5.6.10.zip',
 				'required'           => true,
-				'version'            => '5.6.10',
+				'version'            => '5.7.6',
 				'force_activation'   => true,
 				'force_deactivation' => false,
 				'external_url' 			 => 'https://www.advancedcustomfields.com/'
+			),
+			// Formidable Forms
+			array(
+				'name'								=> 'Formidable Forms',
+				'slug'								=> 'formidable',
+				'required'						=> true,
+				'version'							=> '3.03.02',
+				'force_activation'		=> true,
+				'force_deactivation'	=> false
+			),
+			// Formidable Forms Pro
+			array(
+				'name'               => 'Formidable Forms Pro',
+				'slug'               => 'formidable-pro',
+				'source'             => get_stylesheet_directory() . '/includes/plugins/formidable-pro-3.03.02.zip',
+				'required'           => true,
+				'version'            => '3.03.02',
+				'force_activation'   => true,
+				'force_deactivation' => false,
+				'external_url' 			 => 'https://formidableforms.com/'
 			),
 			// Duplicate Post
 			array(
@@ -83,11 +103,14 @@
 				'force_deactivation' => false,
 			),
 			//// OPTIONAL PLUGINS
-			// Custom Admin Login
+			// Formidable Autoresponder
 			array(
-				'name'      => 'Admin Custom Login',
-				'slug'      => 'admin-custom-login',
-				'required'  => false,
+				'name'               => 'Formidable Form Action Automation',
+				'slug'               => 'formidable-autoresponder',
+				'source'             => get_stylesheet_directory() . '/includes/plugins/formidable-autoresponder-2.01.zip',
+				'required'           => false,
+				'version'            => '2.01',
+				'external_url' 			 => 'https://formidableforms.com/'
 			),
 			// The Events Calendar
 			array(
